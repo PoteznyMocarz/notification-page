@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body class="font-jakarta bg-[#f9fafe] flex h-fit justify-center items-center lg:h-[100vh]">
+  <main class="bg-whiteColor py-5 px-4 lg:px-7 h-[100vh] lg:max-w-[640px] lg:rounded-[20px] lg:shadow-sm lg:h-fit">
+    <div class="flex justify-between h-fit items-center">
+      <span class="font-[800] text-[21px] text-veryDBColor">Notifications <span id="notifications" class="text-whiteColor bg-blueColor px-[11px] py-[2px] text-[16px] ml-1 rounded-[6px]"></span></span>
+      <span id="clearNot" class="text-darkGBColor text-[14px] hover:text-blueColor transition-all cursor-pointer">Mark all as read</span>
+    </div>
+
+    <div id="msg1" class="flex flex-col bg-[#f6fbfc] px-4 py-3 mt-5 rounded-[10px] shadow-sm cursor-pointer unread">
+      <div class="flex h-fit items-start">
+        <img src="/assets/images/avatar-mark-webber.webp" alt="" class="h-[40px]">
+        <span class="text-[14px] ml-3 text-[#646c78]"><span class="font-[800] text-veryDBColor hover:text-blueColor transition-all cursor-pointer">Mark Webber</span> reacted to your recent post <span class="font-[800] text-darkGBColor hover:text-blueColor transition-all cursor-pointer">My first tournament today! <div id="dot1" class="h-[9px] w-[9px] bg-redColor inline-block rounded-full ml-1"></div></span> <span class="block text-[#a4acb4]">1m ago</span></span>
+      </div>
+    </div>
+
+    <div id="msg2" class="flex flex-col bg-[#f6fbfc] px-4 py-3 mt-3 rounded-[10px] shadow-sm cursor-pointer unread">
+      <div class="flex h-fit items-start">
+        <img src="/assets/images/avatar-angela-gray.webp" alt="" class="h-[40px]">
+        <span class="text-[14px] ml-3 text-[#646c78]"><span class="font-[800] text-veryDBColor hover:text-blueColor transition-all cursor-pointer">Angela Gray</span> followed you <div id="dot2" class="h-[9px] w-[9px] bg-redColor inline-block rounded-full ml-1"></div><span class="block text-[#a4acb4]">5m ago</span></span>
+      </div>
+    </div>
+
+    <div id="msg3" class="flex flex-col bg-[#f6fbfc] px-4 py-3 mt-3 rounded-[10px] shadow-sm cursor-pointer unread">
+      <div class="flex h-fit items-start">
+        <img src="/assets/images/avatar-jacob-thompson.webp" alt="" class="h-[40px]">
+        <span class="text-[14px] ml-3 text-[#646c78]"><span class="font-[800] text-veryDBColor hover:text-blueColor transition-all cursor-pointer">Jacob Thompson</span> has joined your group <span class="text-blueColor font-[800]">Chess Club <div id="dot3" class="h-[9px] w-[9px] bg-redColor inline-block rounded-full ml-1"></div></span><span class="block text-[#a4acb4]"> 1 day ago</span></span>
+      </div>
+    </div>
+
+    <div class="flex flex-col px-4 py-3 mt-3 rounded-[10px]">
+      <div class="flex h-fit items-start">
+        <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="" class="h-[40px]">
+        <span class="text-[14px] ml-3 text-[#646c78]"><span class="font-[800] text-veryDBColor hover:text-blueColor transition-all cursor-pointer">Rizky Hasanuddin</span> sent you a private message<span class="block text-[#a4acb4]"> 5 days ago</span> <span class="block border-[1px] border-[#a4acb4] py-3 px-4 mt-2 rounded-[4px] hover:bg-[#e5eff9] hover:border-[#e5eff9] transition-all cursor-pointer">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.</span></span>
+      </div>
+    </div>
+
+    <div class="flex px-4 py-3 mt-3 rounded-[10px] justify-between">
+      <div class="flex h-fit items-start">
+        <img src="/assets/images/avatar-kimberly-smith.webp" alt="" class="h-[40px]">
+        <span class="text-[14px] ml-3 text-[#646c78] max-w-[200px] lg:max-w-fit"><span class="font-[800] text-veryDBColor hover:text-blueColor transition-all cursor-pointer">Kimberly Smith</span> commented on your picture<span class="block text-[#a4acb4]"> 1 week ago</span></span>
+      </div>
+      <img class="h-[43px] w-[43px]" src="/assets/images/image-chess.webp" alt="">
+    </div>
+
+    <div class="flex flex-col px-4 py-3 mt-3 rounded-[10px]">
+      <div class="flex h-fit items-start">
+        <img src="/assets/images/avatar-nathan-peterson.webp" alt="" class="h-[40px]">
+        <span class="text-[14px] ml-3 text-[#646c78]"><span class="font-[800] text-veryDBColor hover:text-blueColor transition-all cursor-pointer">Nathan Peterson</span> reacted to your recent post <span class="text-darkGBColor font-[800] hover:text-blueColor transition-all cursor-pointer">5 end-game strategies to increase your win rate</span><span class="block text-[#a4acb4]"> 2 weeks ago</span></span>
+      </div>
+    </div>
+
+    <div class="flex flex-col px-4 py-3 mt-3 rounded-[10px]">
+      <div class="flex h-fit items-start">
+        <img src="/assets/images/avatar-anna-kim.webp" alt="" class="h-[40px]">
+        <span class="text-[14px] ml-3 text-[#646c78]"><span class="font-[800] text-veryDBColor hover:text-blueColor transition-all cursor-pointer">Anna Kim </span> left the group <span class="text-blueColor font-[800]"> Chess Club</span><span class="block text-[#a4acb4]"> 2 weeks ago</span></span>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
